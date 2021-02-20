@@ -5,18 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class TestPage {
-    public TestPage(){
+public abstract class BasePage {
+    public BasePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
-@FindBy()
-    public WebElement test;
-@FindBy()
-    public WebElement test2;
-//new try
-
-
-
+    @FindBy(linkText = "Dashboard")
+    public  WebElement Dashboard;
+    @FindBy(linkText = "Users")
+    public  WebElement Users;
+    @FindBy(linkText = "Books")
+    public  WebElement Books;
 
 }

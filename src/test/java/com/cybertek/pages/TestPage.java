@@ -12,6 +12,8 @@ public class TestPage {
 
 @FindBy()
     public WebElement test;
+@FindBy()
+    public WebElement test2;
 
 
 
